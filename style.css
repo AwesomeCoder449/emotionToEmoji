@@ -1,0 +1,45 @@
+#camera{
+    width: 350px;
+    height: 250px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: orange;
+}
+#result{
+    width: 360px;
+    height: 310px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: orange;
+}
+#headoftheweb{
+    width: 75%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: large;
+}
+h1{
+    font-family: 'Turret Road', cursive;
+}
+h3{
+    font-family: 'Turret Road', cursive;
+}
+#snap{
+    font-family: 'Turret Road', cursive;
+    height: 25px;
+    background-color: red;
+    background-image: linear-gradient(to bottom right, purple, orange);
+    color: white;
+    border-width: 3;
+}
+#checkbtn{
+    font-family: 'Turret Road', cursive;
+    height: 25px;
+    background-color: red;
+    background-image: linear-gradient(to bottom right, purple, orange);
+    color: white;
+    border-width: 3;
+}
+p{
+    font-family: 'Turret Road', cursive;
+}

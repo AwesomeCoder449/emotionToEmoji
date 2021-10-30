@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Emotions to Emojis</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Turret+Road&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <center>
+                <h1 id="headoftheweb" class=" btn btn-warning">
+                    <span>&#128512;</span>
+                    Emotions To Emojis
+                    <span>&#128522;</span>
+                </h1>
+                <br>
+                <br>
+                <h1>
+                    Take Your Selfie To Generate The Emoji!
+                </h1>
+                <h3>
+                    Are You Happy?
+                </h3>
+                <h3>
+                    Are You Sad?
+                </h3>
+                <h3>
+                    Are You Angry?
+                </h3>
+                <h3>
+                    Check Your Emotion!
+                </h3>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <label>
+                        camera
+                    </label>
+                    <div id="camera">
+                </div>
+                <br>
+                <br>
+                <button type="button"  id="snap" onclick="take_snapshot()">capture image</button>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <label>
+                    prediction 1
+                </label>
+                <p id="emotion-name1"></p>
+                <p id="emoji1">    
+                </p>
+                <label>
+                    prediction 2
+                </label>
+                <p id="emotion-name2"></p>
+                <p id="emoji2">
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <label>
+                    result
+                </label>
+                <div id="result">
+                </div>
+                <br>
+                <br>
+                <button type="button" id="checkbtn" onclick="check()"> predict the emotion</button>
+            </div>
+            </center>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
